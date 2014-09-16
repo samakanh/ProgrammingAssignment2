@@ -1,5 +1,5 @@
 ## This function will create a special matrix (object), which is containing 
-## a list of function to get/set the value of the matrix and its inverse 
+## a list of function to get/set the value of the matrix and its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         imatrix <- NULL
@@ -16,10 +16,10 @@ makeCacheMatrix <- function(x = matrix()) {
              getInverse = getInverse)
 }
 
-## This function calculates the inverse of the special matrix. Before 
-## calculation, it will determine whether the inverse already calculated 
+## This function calculates the inverse of the special matrix. Before
+## calculation, it will determine whether the inverse already calculated.
 ## If the inverse already calculated, it will retreive from the cache.
-## Otherwise, it calculates the inverse of the special matrix and set to cache
+## Otherwise, it calculates the inverse of the special matrix and set to cache.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
